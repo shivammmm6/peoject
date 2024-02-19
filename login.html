@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-
+    scale=1.0">
+    <title>KhaooMeal.com</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;1,200;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    <header>
+        <nav id="navbar">
+            <div id="logo">
+                <img src="logo.png" alt="KhaooMeal.com">
+            </div>
+            <ul>
+                <li class="item"><a href="Food Web.html">Home</a></li>
+                <li class="item"><a href="Food Web.html">Our Clients</a></li>
+                <li class="item"><a href="Food Web.html">Our Services</a></li>
+                <li class="item"><a href="login.html">Login page</a></li>
+            </ul>
+        </nav>  
+        <script>
+          function validateform(){
+            var name=document.myform.name.value;
+            var pass=document.myform.pass.value;
+ 
+            if(name=null|| name==""){
+              alert("Name can't be blank");
+              return false;
+            }else if(pass.length<6){
+              alert("password must be atleast 6 characters long.");
+              return false
+            }
+          }
+        </script>
+            
+    
+
+<div class="acount-page">
+    <div class="container">
+        <div class="row">
+           
+           
+                <div class="form-container">
+                    <h2>Login into  KhaooMeal</h2>
+                
+                    <form action="#"  method="POST" method="POST"  name="myform" onsubmit="return validateform()">
+                      <div class="imgcontainer">
+                        <img src="img/avatar.png" alt="Avatar" class="avatar">
+                      </div>
+                    
+                      <div class="container">
+                        <label for="uname"><b>Username</b></label>
+                        <input type="text" placeholder="Enter Username" id="user" name="name" >
+                    
+                        <label for="psw"><b>Password</b></label>
+                        <input type="password" placeholder="Enter Password"   id="pass" name="pass" >
+                            
+                        <button type="submit" id="btn">Login</button>
+                        <label>
+                          <input type="checkbox" checked="checked" name="remember"> Remember me
+                        </label>
+                      </div>
+                    
+                      <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" class="cancelbtn">Cancel</button>
+                        <span class="psw">Forgot <a href="#">password?</a></span>
+                      </div>
+                     
+                    </form>
+                  </style>
+ </head>
+<body>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+       <script>
+           var MenuItems= document.getElementById("MenuItems");
+
+           MenuItems.style.maxHeight="0px"
+         function menutoggle(){
+            if(MenuItems.style.maxHeight=="0px")
+            {
+                MenuItems.style.maxHeight="200px";
+
+            }
+            else
+            {
+                MenuItems.style.maxHeight="0px";
+            }
+        }
+      </script>   
+    </header>
+</body>
+</html>
